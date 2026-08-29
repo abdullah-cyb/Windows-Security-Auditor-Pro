@@ -2,7 +2,7 @@
 
 أداة مبنية بلغة Python لفحص وتقييم إعدادات أمان نظام Windows واكتشاف الإعدادات التي قد تزيد من المخاطر الأمنية.
 
-## Screenshot
+## interface GUI
 
 ![Windows Security Auditor Pro](assets/screenshot.jpg)
 
@@ -46,6 +46,9 @@
 - Python 3.11 أو أحدث
 - صلاحيات Administrator
 - المكتبات الموجودة في `requirements.txt`
+
+### التقرير الأمني
+![Security Report](assets/report.jpg)
 
 ## المكتبات المستخدمة
 
