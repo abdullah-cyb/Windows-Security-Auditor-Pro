@@ -1,0 +1,19 @@
+# Security Auditor Pro Requirements
+
+# Modern GUI
+customtkinter
+
+# System information
+psutil
+
+# Windows API
+pywin32
+
+# Reports
+reportlab
+
+# Charts
+matplotlib
+
+# Icons
+pillow
