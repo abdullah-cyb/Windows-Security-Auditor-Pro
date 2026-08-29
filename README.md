@@ -1,20 +1,26 @@
 # Windows Security Auditor Pro
 
-أداة مبنية بلغة Python لفحص وتقييم إعدادات أمان نظام Windows واكتشاف الإعدادات التي قد تزيد من المخاطر الأمنية.
+أداة مبنية بلغة Python لفحص وتقييم إعدادات أمان نظام Windows واكتشاف المخاطر الأمنية.
 
-## interface GUI
+**A Python-based tool for auditing Windows security configurations, detecting security risks, and evaluating the overall protection level.**
+
+## Interface GUI
 
 ![Windows Security Auditor Pro](assets/screenshot.jpg)
 
-## المشكلة
+## المشكلة | Problem
 
-قد تكون بعض إعدادات الحماية في Windows غير مفعلة أو غير مضبوطة بالشكل الصحيح، مما قد يترك الجهاز معرضًا لمخاطر أمنية.
+قد تكون بعض إعدادات الحماية في Windows غير مفعلة أو غير مضبوطة بالشكل الصحيح، مما قد يزيد من المخاطر الأمنية.
 
-## الحل
+Some Windows security configurations may be disabled or improperly configured, increasing potential security risks.
 
-يقوم Windows Security Auditor Pro بفحص أهم مكونات أمان النظام، ثم يحلل النتائج ويحسب **درجة أمان من 100** مع إمكانية إنشاء تقرير بنتائج الفحص.
+## الحل | Solution
 
-## أهم المميزات
+يقوم البرنامج بفحص مكونات أمان Windows وتحليل النتائج، ثم يحسب **Security Score من 100** مع إمكانية إنشاء تقرير أمني.
+
+The tool scans and analyzes key Windows security components, calculates a **Security Score out of 100**, and generates a security report.
+
+## أهم المميزات | Features
 
 - فحص Windows Firewall
 - فحص Windows Defender
@@ -26,31 +32,30 @@
 - تخزين النتائج باستخدام SQLite
 - واجهة رسومية سهلة الاستخدام
 
-## نظام التقييم
+## نظام التقييم | Security Score
 
-يتم حساب درجة الأمان بناءً على:
+| المكون | Component | النسبة |
+|---|---|---:|
+| Firewall | جدار الحماية | 20% |
+| Windows Defender | الحماية من التهديدات | 20% |
+| Encryption | التشفير | 15% |
+| Event Logs | سجلات الأحداث | 25% |
+| Threat Detection | اكتشاف التهديدات | 20% |
 
-| المكون | النسبة |
-|---|---:|
-| Firewall | 20% |
-| Windows Defender | 20% |
-| Encryption | 15% |
-| Event Logs | 25% |
-| Threat Detection | 20% |
+**الدرجة النهائية | Final Score: 100/100**
 
-**الدرجة النهائية: 100/100**
+## التقرير الأمني | Security Report
 
-## المتطلبات
+![Security Report](assets/report.jpg)
+
+## المتطلبات | Requirements
 
 - Windows 10 أو Windows 11
 - Python 3.11 أو أحدث
 - صلاحيات Administrator
 - المكتبات الموجودة في `requirements.txt`
 
-### التقرير الأمني
-![Security Report](assets/report.jpg)
-
-## المكتبات المستخدمة
+## المكتبات المستخدمة | Technologies
 
 - Python
 - CustomTkinter
@@ -59,48 +64,56 @@
 - SQLite
 - ReportLab
 
-## طريقة التشغيل
+## طريقة التشغيل | Installation & Run
 
-### 1. تحميل المشروع
+### 1. تحميل المشروع | Clone
 
 ```bash
 git clone https://github.com/abdullah-cyb/Windows-Security-Auditor-Pro.git
 ```
 
-### 2. الدخول إلى مجلد المشروع
+### 2. الدخول إلى المشروع | Enter the project
 
 ```bash
 cd Windows-Security-Auditor-Pro
 ```
 
-### 3. تثبيت المتطلبات
+### 3. تثبيت المتطلبات | Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. تشغيل البرنامج
+### 4. تشغيل البرنامج | Run
 
-يفضل تشغيل Terminal أو CMD بصلاحيات **Administrator** ثم:
+يفضل تشغيل CMD أو Terminal بصلاحيات **Administrator**.
+
+Run CMD or Terminal as **Administrator**, then:
 
 ```bash
 python main.py
 ```
 
-## الاستخدام
+## الاستخدام | Usage
 
-بعد تشغيل البرنامج، يبدأ بفحص إعدادات أمان Windows وعرض النتائج ودرجة الأمان، مع إمكانية إنشاء تقرير بنتائج الفحص.
+يقوم البرنامج بفحص إعدادات أمان Windows وعرض النتائج ودرجة الأمان، مع إمكانية إنشاء تقرير بنتائج الفحص.
 
-## الهدف من المشروع
+The application scans Windows security configurations, displays the results and security score, and allows the user to generate a security report.
 
-تم تطوير المشروع لأغراض **تعليمية ودفاعية** بهدف مساعدة المستخدمين والطلاب والمهتمين بالأمن السيبراني على فهم وفحص إعدادات أمان Windows.
+## الهدف | Purpose
+
+تم تطوير المشروع لأغراض **تعليمية ودفاعية** لمساعدة الطلاب والمهتمين بالأمن السيبراني على فهم وفحص إعدادات أمان Windows.
+
+Developed for **educational and defensive security purposes** to help students and cybersecurity enthusiasts understand and audit Windows security configurations.
 
 ## Disclaimer
 
-هذا المشروع مخصص للتدقيق الأمني والدراسة وتحسين الحماية، وليس للاستخدام في أي نشاط ضار أو غير مصرح به.
+هذا المشروع مخصص للتدقيق الأمني والتعليم وتحسين الحماية، وليس للاستخدام في أي نشاط ضار أو غير مصرح به.
 
-## المطور
+This project is intended for security auditing, education, and defensive purposes only. Do not use it for malicious or unauthorized activities.
 
-**Abdullah cyber**
+## المطور | Developer
+
+**Abdullah Cyber**
 
 Cybersecurity Student & Developer
