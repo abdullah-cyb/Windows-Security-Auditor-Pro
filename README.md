@@ -94,6 +94,6 @@ python main.py
 
 ## المطور
 
-**Abdullah Nasser**
+**Abdullah cyber**
 
 Cybersecurity Student & Developer
